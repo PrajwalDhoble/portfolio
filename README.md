@@ -1,2 +1,2 @@
 # portfolio
-## DEPLOYED LINK :- https://drive.google.com/file/d/1vtEJYXxgWTNT6dsA52nBTwAXgVSmM_XP/view?usp=sharing
+## DEPLOYED LINK :- https://prajwaldhoble1.netlify.app/
