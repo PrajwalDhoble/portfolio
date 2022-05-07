@@ -41,7 +41,7 @@
               <li><a href="#portfolio">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-            <a class="btn btn--main" href="https://drive.google.com/file/d/1vtEJYXxgWTNT6dsA52nBTwAXgVSmM_XP/view?usp=sharing" target="_blank">
+            <a class="btn btn--main" href="https://drive.google.com/file/d/1buuto7u3NF2cIsf6c88MErWzUwFtqLUZ/view?usp=sharing" target="_blank">
               <i class="bi bi-download"></i> Resume
             </a>
           </nav>
@@ -49,7 +49,7 @@
           
           <div class="header__contact">
            
-            <a class="btn btn--light" href="https://drive.google.com/file/d/1vtEJYXxgWTNT6dsA52nBTwAXgVSmM_XP/view?usp=sharing" target="_blank">
+            <a class="btn btn--light" href="https://drive.google.com/file/d/1buuto7u3NF2cIsf6c88MErWzUwFtqLUZ/view?usp=sharing" target="_blank">
               <i class="bi bi-download"></i> Resume
             </a>
           </div>
@@ -182,6 +182,10 @@
               </div>
             </div>
           </div>
+
+
+
+
           
           <div class="portfolio__box">
             <img id="projectimage2" class="portfolio__img" src="./assets/Screenshot (604).png" alt="Portfolio Items" />
@@ -223,6 +227,46 @@
     </section>
 
 
+
+    <section class="section animate__animated animate__slideInUp">
+      <div class="container">
+        <div class="portfolio">
+          <div class="portfolio__box">
+            <img id="projectimage3" class="portfolio__img" src="./assets/one.png" alt="Portfolio Items" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">HOTSTAR</h3>
+              <p class="portfolio__content">
+                In this project we have to clone the video streaming platform Hotstar.com and we have made this website using ReactJS in frontend our first react project.
+              </p>
+              <br>
+              <div class="tech_heading_skills">
+                <span>Tech Stacks:</span> <br> 
+                <span id="mine_Skills">
+                  <p>React</p>
+                  <span>|</span>
+                  <p>CSS</p>
+                  <span>|</span>
+                  <p>JavaScript</p>
+                <span>|</span>
+                <p>Express</p>
+                <span>|</span>
+              <p>Mongo</p>
+                </span>
+              </div>
+              <br>
+              <div id="projects_button">
+                <a class="portfolio__link" href="https://github.com/PrajwalDhoble/Hotstar-Clone" target="_blank">
+                  <i id="deploy_symbol" class="bi bi-github"></i>
+                  <span id="hover_deploy">GitHub</span>
+                </a>
+                <a class="portfolio__link2" href="https://our-hotstar-project-vijendrasaini.vercel.app" target="_blank">
+                  <i id="deploy_symbol" class="bi bi-arrow-up-right-circle-fill"></i>
+                  <span id="hover_deploy">Review</span>
+                </a>
+              </div>
+            </div>
+          </div>
+    </section>
     
 
     <section class="section" id="contact">
@@ -323,12 +367,33 @@
     index2++;
   } , 2000);
 
+
+  var imageSources3 = [
+  "./assets/one.png",
+  "./assets/2.png",
+  "./assets/three.png",
+  "./assets/four.png",
+  // "./assets/Screenshot (608).png"
+  ]
+
+
+  var index3 = 0;
+  setInterval (function(){
+    if (index3 === imageSources3.length) {
+      index3 = 0;
+    }
+    document.getElementById("projectimage3").src = imageSources3[index3];
+    index3++;
+  } , 2000);
+
   document.getElementById("projectimage1").addEventListener("click",function(){
     window.open("https://vigorous-meitner-b9028e.netlify.app/","_blank");
   })
   document.getElementById("projectimage2").addEventListener("click",function(){
     window.open("https://leviwithbackend.herokuapp.com","_blank");
   })
-  
+  document.getElementById("projectimage3").addEventListener("click",function(){
+    window.open("https://our-hotstar-project-vijendrasaini.vercel.app","_blank");
+  })
   
 </Script>
